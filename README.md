@@ -63,12 +63,14 @@ With **da.summary(df)**, we instantly get an overview of missing values, column 
 
 ```python
 # Filling missing values with median for numerical columns
-df["Purchase_Amount"].fillna(df["Purchase_Amount"].median(), inplace=True)
-df["Customer_Age"].fillna(df["Customer_Age"].median(), inplace=True)
+df["Purchase_Amount"] = df["Purchase_Amount"].fillna(df["Purchase_Amount"].median())
+df["Customer_Age"] = df["Customer_Age"].fillna(df["Customer_Age"].median())
 
 # Filling missing values with mode for categorical columns
-df["Gender"].fillna(df["Gender"].mode()[0], inplace=True)
-df["Location"].fillna(df["Location"].mode()[0], inplace=True)
+df["Gender"] = df["Gender"].fillna(df["Gender"].mode()[0])
+df["Location"] = df["Location"].fillna(df["Location"].mode()[0])
+
+print(df)
 ```
 
 ### **Using DataAnalysts**
@@ -107,7 +109,6 @@ Both methods are simple, but **da.clean()** maintains a structured workflow acro
 
 ```python
 # Converting columns to appropriate data types
-df["Purchase_Date"] = pd.to_datetime(df["Purchase_Date"])
 df["Purchase_Amount"] = df["Purchase_Amount"].astype(float)
 df["Customer_Age"] = df["Customer_Age"].astype(int)
 ```
