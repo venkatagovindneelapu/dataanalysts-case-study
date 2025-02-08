@@ -46,7 +46,7 @@ df.info()
 import dataanalysts as da
 
 # Load dataset using DataAnalysts
-df = da.csv("ecommerce_sales_data.xlsx")
+df = da.excel("ecommerce_sales_data.xlsx")
 
 # Quick summary of dataset
 da.summary(df)
