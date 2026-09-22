@@ -4,13 +4,13 @@
 
 Data cleaning and preprocessing are fundamental steps in data analytics. Traditional methods using **pandas** and **NumPy** require multiple lines of code to handle missing values, outliers, type conversions, and other preprocessing tasks. The **DataAnalysts** library simplifies and accelerates this process by allowing data analysts to clean, transform, and visualize data using **intuitive one-liners**.
 
-This case study compares traditional data preprocessing techniques with the **DataAnalysts** library while working on a large **E-Commerce Sales dataset (10,000 rows)**. We will demonstrate how DataAnalysts **reduces complexity and improves efficiency**, making it a powerful alternative for data professionals.
+This case study compares traditional data preprocessing techniques with the **DataAnalysts** library while working on an **E-Commerce Sales dataset (1,000 rows)**. We will demonstrate how DataAnalysts **reduces complexity and improves efficiency**, making it a powerful alternative for data professionals.
 
 ---
 
 ## **Dataset Overview**
 
-The dataset consists of **10,000 e-commerce transactions** from 2023 to 2024, including the following columns:
+The dataset consists of **1,000 e-commerce transactions** from 2023 to 2024, including the following columns:
 
 - **Customer\_ID** – Unique identifier for each customer.
 - **Purchase\_Date** – Date of purchase.
