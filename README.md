@@ -8,6 +8,33 @@ This case study compares traditional data preprocessing techniques with the **Da
 
 ---
 
+## Repository contents
+
+| File | Purpose |
+| --- | --- |
+| `README.md` | Written walkthrough comparing pandas/NumPy preprocessing with DataAnalysts |
+| `dataanalysts_case_study.ipynb` | Executable notebook with the same comparison steps |
+| `ecommerce_sales_data.xlsx` | Sample e-commerce sales workbook used by the examples (1,000 data rows) |
+
+Related library source: [`dataanalysts_v2.1.0`](https://github.com/venkatagovindneelapu/dataanalysts_v2.1.0). The notebook installs the published package with `pip install dataanalysts`.
+
+## How to explore this case study
+
+1. Clone this repository and open `dataanalysts_case_study.ipynb` in Jupyter, VS Code, or Google Colab.
+2. Install dependencies used by the notebook (at minimum `dataanalysts`, which pulls in pandas/NumPy/matplotlib via its package dependencies):
+
+```bash
+pip install dataanalysts
+```
+
+3. Load the sample workbook from the repository root. The README examples use:
+
+```python
+df = pd.read_excel("ecommerce_sales_data.xlsx")
+```
+
+The notebook currently uses a Colab-style path (`/content/ecommerce_sales_data.xlsx`). If you run locally, change that path to `ecommerce_sales_data.xlsx` (or upload the file in Colab so `/content/...` resolves).
+
 ## **Dataset Overview**
 
 The dataset consists of **1,000 e-commerce transactions** from 2023 to 2024, including the following columns:
